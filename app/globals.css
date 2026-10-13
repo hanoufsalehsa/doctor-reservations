@@ -142,6 +142,9 @@ button, a, input { -webkit-tap-highlight-color: transparent; }
 .field-wrap input { width: 100%; border: 1px solid #e2e9e2; border-radius: 12px; background: #fff; padding: 12px 13px; color: #253a30; font-size: 14px; font-weight: 400; outline: none; transition: border-color 150ms, box-shadow 150ms; }
 .field-wrap input::placeholder { color: #b1bbb4; }
 .field-wrap input:focus { border-color: #69a184; box-shadow: 0 0 0 3px rgb(105 161 132 / 13%); }
+.otp-input { width: 100%; min-width: 0; border: 1px solid #e2e9e2; border-radius: 12px; background: #fff; padding: 11px 13px; color: #253a30; font-size: 14px; letter-spacing: 0.15em; outline: none; }
+.otp-input:focus { border-color: #69a184; box-shadow: 0 0 0 3px rgb(105 161 132 / 13%); }
+.otp-input:disabled { background: #f7f8f5; color: #9ca9a0; }
 .primary-button, .secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 12px; padding: 12px 17px; font-size: 13px; font-weight: 600; transition: background-color 150ms, border-color 150ms, transform 150ms; }
 .primary-button { background: #2f725e; color: white; }
 .primary-button:hover:not(:disabled) { background: #245c4b; transform: translateY(-1px); }
