@@ -1,0 +1,17 @@
+import { env } from "cloudflare:workers";
+import { getHostedPaymentProvider, getPhoneOtpProvider } from "../../../lib/booking-providers";
+
+export const dynamic = "force-dynamic";
+
+export async function GET() {
+  const parsedFee = Number.parseInt(env.BOOKING_FEE_MINOR ?? "", 10);
+  const feeMinor = Number.isSafeInteger(parsedFee) && parsedFee > 0 ? parsedFee : null;
+  const currency = /^[A-Z]{3}$/.test(env.BOOKING_CURRENCY ?? "") ? env.BOOKING_CURRENCY! : "SAR";
+
+  return Response.json({
+    phoneOtpReady: getPhoneOtpProvider() !== null,
+    paymentReady: getHostedPaymentProvider() !== null,
+    feeMinor,
+    currency,
+  });
+}
