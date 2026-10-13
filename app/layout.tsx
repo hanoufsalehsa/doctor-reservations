@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Book an appointment | Dr. Your Name",
-  description: "Choose a time and reserve an appointment with Dr. Your Name.",
+  title: "Book an appointment | Dr Hanouf",
+  description: "Choose a time and reserve an appointment with Dr Hanouf.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

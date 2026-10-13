@@ -130,9 +130,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f8f4] text-[#18302c]">
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10">
-        <a href="#top" className="flex items-center gap-3" aria-label="Dr. Your Name home">
+        <a href="#top" className="flex items-center gap-3" aria-label="Dr Hanouf home">
           <span className="grid size-11 place-items-center rounded-[15px] bg-[#dcece4] text-[#1d6b58]"><HeartPulse size={21} strokeWidth={1.8} /></span>
-          <span><span className="block text-[15px] font-semibold tracking-[-0.03em]">Dr. Your Name</span><span className="block text-[11px] tracking-wide text-[#75827d]">CLINIC APPOINTMENTS</span></span>
+          <span><span className="block text-[15px] font-semibold tracking-[-0.03em]">Dr Hanouf</span><span className="block text-[11px] tracking-wide text-[#75827d]">CLINIC APPOINTMENTS</span></span>
         </a>
         <a href="#booking" className="rounded-full border border-[#d7e1db] bg-white px-4 py-2.5 text-sm font-medium text-[#2d5e50] transition hover:border-[#90b8a8]">Book a visit <span aria-hidden="true">↗</span></a>
       </header>
@@ -151,7 +151,7 @@ export default function Home() {
             <div className="relative flex min-h-[290px] flex-col justify-between sm:min-h-[315px]">
               <div className="flex items-center justify-between"><span className="rounded-full bg-white/70 px-3 py-1.5 text-[11px] font-medium text-[#497864]">YOUR CARE, YOUR TIME</span><Sparkles size={19} className="text-[#64947e]" /></div>
               <div className="max-w-[310px]"><p className="font-serif text-[50px] leading-none tracking-[-0.05em] text-[#22463a] sm:text-[56px]">A little more<br />room to breathe.</p><p className="mt-4 max-w-[260px] text-sm leading-6 text-[#5c7869]">Your appointment is confirmed after phone verification and secure payment.</p></div>
-              <div className="flex items-center gap-3 border-t border-[#bfd5c7] pt-4"><span className="grid size-10 place-items-center rounded-full bg-[#b8d4c2] text-[#356a56]"><UserRound size={17} /></span><span><span className="block text-sm font-medium text-[#2a5143]">Dr. Your Name</span><span className="block text-xs text-[#688575]">Your specialist</span></span><span className="ml-auto flex items-center gap-1.5 text-xs text-[#557866]"><MapPin size={13} /> Clinic visit</span></div>
+              <div className="flex items-center gap-3 border-t border-[#bfd5c7] pt-4"><span className="grid size-10 place-items-center rounded-full bg-[#b8d4c2] text-[#356a56]"><UserRound size={17} /></span><span><span className="block text-sm font-medium text-[#2a5143]">Dr Hanouf</span><span className="block text-xs text-[#688575]">Your specialist</span></span><span className="ml-auto flex items-center gap-1.5 text-xs text-[#557866]"><MapPin size={13} /> Clinic visit</span></div>
             </div>
           </div>
           <div className="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-2xl border border-[#e4e9e4] bg-white px-4 py-3 shadow-[0_12px_35px_rgba(27,61,48,0.09)] sm:-left-7"><span className="grid size-9 place-items-center rounded-xl bg-[#edf5ef] text-[#4f8a75]"><LockKeyhole size={17} /></span><span><span className="block text-xs font-semibold">Hosted checkout, when connected</span><span className="block text-[11px] text-[#819087]">Card numbers are never stored here</span></span></div>
@@ -176,7 +176,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="border-t border-[#e7ece6] bg-[#f4f6f2]"><div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-[#8b978f] sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"><span>© {new Date().getFullYear()} Dr. Your Name · All rights reserved</span><span>Secure phone and payment services must be connected to accept bookings.</span></div></footer>
+      <footer className="border-t border-[#e7ece6] bg-[#f4f6f2]"><div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-[#8b978f] sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-10"><span>© {new Date().getFullYear()} Dr Hanouf · All rights reserved</span><span>Secure phone and payment services must be connected to accept bookings.</span></div></footer>
     </main>
   );
 }
