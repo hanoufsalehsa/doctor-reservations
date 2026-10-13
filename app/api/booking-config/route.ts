@@ -1,5 +1,5 @@
 import { env } from "cloudflare:workers";
-import { getHostedPaymentProvider, getPhoneOtpProvider } from "../../../lib/booking-providers";
+import { getPhoneOtpProvider } from "../../../lib/booking-providers";
 
 export const dynamic = "force-dynamic";
 
@@ -10,7 +10,9 @@ export async function GET() {
 
   return Response.json({
     phoneOtpReady: getPhoneOtpProvider() !== null,
-    paymentReady: getHostedPaymentProvider() !== null,
+    // Keep checkout disabled until the payment adapter, atomic slot hold, and
+    // signed webhook settlement are implemented together.
+    paymentReady: false,
     feeMinor,
     currency,
   });
